@@ -2,8 +2,19 @@ html,
 body {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
+  color: #3c3e44;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 24px 0px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
 /* Header */
 
@@ -38,7 +49,6 @@ body {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #abaeb5;
-  font-weight: bold;
 }
 
 nav {
@@ -74,5 +84,80 @@ nav span {
     display: inline-block;
     text-align: center;
     width: 25%;
+  }
+}
+
+/* Banner */
+
+.banner {
+  width: 100%;
+  background-color: hsla(222, 6%, 69%, 0.91);
+  display: flex;
+}
+
+.banner img {
+  width: 60%;
+  height: auto;
+  margin: 32px 24px;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+  justify-content: center;
+}
+
+.start {
+  background-color: #3c3e44;
+  color: white;
+  padding: 8px 0px;
+  text-align: center;
+  margin: 24px 0px;
+}
+
+@media only screen and (min-width: 751px) and (max-width: 1000px) {
+  .banner img {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 351px) and (max-width: 750px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner img {
+    width: 100%;
+    margin: 0px 0px;
+  }
+  .start {
+    background-color: hsla(225, 6%, 25%, 0.50);
+    margin: 24px 0px 32px 0px;
+  }
+  h1 {
+    margin: 32px 0px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner img {
+    width: 100%;
+    margin: 0px 0px;
+  }
+  .start {
+    background-color: hsla(225, 6%, 25%, 0.50);
+    margin: 24px 0px 32px 0px;
+  }
+  h1 {
+    margin: 32px 0px;
+  }
+  .tagline {
+    margin: 0px 16px;
+    width: 90%;
   }
 }
