@@ -20,13 +20,11 @@ body {
   align-items: center;
   padding-left: 24px;
   flex-grow: 1;
-
 }
 
 .logo img {
   height: 32px;
   width: auto;
-
 }
 
 .title1{
@@ -68,16 +66,13 @@ nav span {
   nav {
     display: none;
   }
-  .header {
-    justify-content: space-around;
-  }
   .altnav {
     display: flex;
     width: 100%;
   }
   .altnav span {
     display: inline-block;
-   text-align: center;
+    text-align: center;
     width: 25%;
   }
 }
