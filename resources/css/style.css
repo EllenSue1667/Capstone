@@ -310,7 +310,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) and (min-width: 400px) {
   .information {
     background-color: white;
   }
@@ -324,5 +324,31 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .information {
+    background-color: white;
+  }
+  .practice {
+    display: none;
+  }
+  .infolist {
+    display: none;
+  }
+  .infolistalt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .orientationalt1{
+    margin: 16px 8px;
+  }
+  .campusalt1{
+    margin: 16px 8px;
+  }
+  .guestalt1 {
+    margin: 16px 8px;
   }
 }
