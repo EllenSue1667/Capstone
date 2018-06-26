@@ -16,6 +16,12 @@ h2 {
   font-weight: bold;
 }
 
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 8px 0px;
+}
+
 /* Header */
 
 .header {
@@ -159,5 +165,164 @@ nav span {
   .tagline {
     margin: 0px 16px;
     width: 90%;
+  }
+}
+
+/* Information */
+
+.information {
+  display: flex;
+  width: 100%;
+  background-color: hsla(225, 6%, 25%, 0.15);
+}
+
+a {
+  color: #198dcb;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.practice {
+  margin: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.practice img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 12px;
+}
+
+.practice span {
+  font-size: 0.8rem;
+}
+
+.infolist {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-left: solid 2px hsla(222, 6%, 69%, 0.91);
+}
+
+.infolistalt {
+  display: none;
+}
+
+.orientation {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 2px hsla(222, 6%, 69%, 0.91);
+}
+
+.orientation span {
+  width: 65%;
+}
+
+.orientation img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.orientationalt {
+  flex-direction: column;
+  padding: 16px;
+  justify-content: center;
+}
+
+.orientationalt img {
+  width: 100%;
+  height: auto;
+
+}
+
+.orientationalt1 {
+  margin: 32px 32px;
+}
+
+.campus {
+  display: flex;
+  align-items: center;
+}
+
+.campus span {
+  width: 65%;
+}
+
+.campus img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.campusalt {
+  flex-direction: column;
+  padding: 16px;
+}
+
+.campusalt img {
+  width: 100%;
+  height: auto;
+}
+
+.campusalt1 {
+  margin: 32px 32px;
+}
+
+.guest {
+  display: flex;
+  align-items: center;
+  background-color: hsla(222, 6%, 69%, 0.91);
+}
+
+.guest span {
+  width: 65%;
+}
+
+.guest img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.guestalt {
+  flex-direction: column;
+  padding: 16px;
+}
+
+.guestalt img {
+  width: 100%;
+  height: auto;
+}
+
+.guestalt1 {
+  margin: 32px 32px;
+}
+
+@media only screen and (min-width: 751px) and (max-width: 1200px) {
+  .practice {
+    width: 50%;
+  }
+  .infolist {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .information {
+    background-color: white;
+  }
+  .practice {
+    display: none;
+  }
+  .infolist {
+    display: none;
+  }
+  .infolistalt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }
