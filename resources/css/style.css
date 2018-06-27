@@ -19,7 +19,7 @@ h2 {
 p {
   font-size: 1rem;
   line-height: 1.5;
-  padding: 8px 0px;
+  padding: 8px 0px 8px 0px;
 }
 
 /* Header */
@@ -352,3 +352,92 @@ a {
     margin: 16px 8px;
   }
 }
+
+/* Courses */
+
+.courses {
+  display: flex;
+  width: 100%;
+  background-color: hsla(222, 6%, 69%, 0.60);
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 16px 0px;
+}
+
+.courses h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+  margin: 16px 16px;
+  background-color: white;
+}
+
+.subject img {
+  width: 100%;
+  height: auto;
+}
+
+.subject1 {
+  padding: 16px 16px;
+}
+
+.subject1 h2 {
+  padding: 0px 0px 16px 0px;
+}
+
+.coursesalt {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .courses {
+    display: none;
+  }
+  .coursesalt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: solid 1px hsla(222, 6%, 69%, 0.91);
+    align-items: center;
+    padding-bottom: 32px;
+  }
+  .coursesalt h1 {
+    text-align: center;
+    margin: 32px 0px 16px 0px;
+  }
+  .coursesalt h2 {
+    background-color: hsla(222, 6%, 69%, 0.60);
+    padding: 16px 16px 24px 16px;
+    margin: 8px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .courses {
+    display: none;
+  }
+  .coursesalt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: solid 1px hsla(222, 6%, 69%, 0.91);
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: solid 1px hsla(222, 6%, 69%, 0.91);
+  }
+  .coursesalt h1 {
+    text-align: center;
+    margin: 32px 0px 16px 0px;
+  }
+  .coursesalt h2 {
+    background-color: hsla(222, 6%, 69%, 0.60);
+    padding: 16px 16px 24px 16px;
+    margin: 8px;
+    width: 80%;
+  }
