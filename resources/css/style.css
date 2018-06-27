@@ -372,7 +372,7 @@ a {
 .subject {
   display: flex;
   flex-direction: column;
-  width: 275px;
+  width: 280px;
   margin: 16px 16px;
   background-color: white;
 }
