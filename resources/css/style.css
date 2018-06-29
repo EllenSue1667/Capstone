@@ -539,6 +539,7 @@ a {
 .thesisalt h1 {
   text-align: center;
   width: 100%;
+  margin-bottom: 16px;
 }
 
 @media only screen and (min-width: 751px) and (max-width: 1000px) {
@@ -565,5 +566,46 @@ a {
     width: 100%;
     height: auto;
     padding-bottom: 24px;
+  }
+}
+
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  background-color: hsla(225, 6%, 25%, 0.15);
+  border-top: solid 1px hsla(222, 6%, 69%, 0.91);
+  display: flex;
+  height: 75px;
+}
+
+.copyright {
+  flex-grow: 1;
+  padding: 16px 24px;
+}
+
+.terms {
+  padding: 16px 24px;
+}
+
+.terms span {
+  padding-left: 24px;
+}
+
+@media only screen and (max-width: 750px) {
+  .footer {
+    background-color: hsla(225, 6%, 25%, 0.05);
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .footer {
+    background-color: hsla(225, 6%, 25%, 0.05);
+    height: auto;
+  }
+  .terms {
+    display: none;
   }
 }
