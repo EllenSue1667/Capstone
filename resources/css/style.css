@@ -312,7 +312,7 @@ a {
 
 @media only screen and (max-width: 750px) and (min-width: 400px) {
   .information {
-    background-color: white;
+    background-color: hsla(225, 6%, 25%, 0.05);
   }
   .practice {
     display: none;
@@ -329,7 +329,7 @@ a {
 
 @media only screen and (max-width: 399px) {
   .information {
-    background-color: white;
+    background-color: hsla(225, 6%, 25%, 0.05);
   }
   .practice {
     display: none;
@@ -355,13 +355,16 @@ a {
 
 /* Courses */
 
-.courses {
-  display: flex;
+.coursessec {
   width: 100%;
   background-color: hsla(222, 6%, 69%, 0.60);
+}
+
+.courses {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 16px 0px;
+  padding: 16px 16px;
 }
 
 .courses h1 {
@@ -394,7 +397,20 @@ a {
   display: none;
 }
 
+@media only screen and (min-width: 1200px) {
+  .courses {
+    width: 1100px;
+  }
+  .coursessec {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 750px) {
+  .coursessec {
+    display: none;
+  }
   .courses {
     display: none;
   }
@@ -402,6 +418,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: hsla(225, 6%, 25%, 0.05);
     border-top: solid 1px hsla(222, 6%, 69%, 0.91);
     align-items: center;
     padding-bottom: 32px;
@@ -419,11 +436,15 @@ a {
 }
 
 @media only screen and (max-width: 350px) {
+  .coursessec {
+    display: none;
+  }
   .courses {
     display: none;
   }
   .coursesalt {
     display: flex;
+    background-color: hsla(225, 6%, 25%, 0.05);
     flex-direction: column;
     width: 100%;
     border-top: solid 1px hsla(222, 6%, 69%, 0.91);
@@ -441,3 +462,108 @@ a {
     margin: 8px;
     width: 80%;
   }
+}
+
+/* Thesis */
+
+.thesis {
+  width: 100%;
+  padding: 16px 0px;
+  background-color: hsla(225, 6%, 25%, 0.15);
+}
+
+.thesis h1 {
+  text-align: center;
+  width: 100%;
+}
+
+.thesis1{
+  display: flex;
+}
+
+.reimagine {
+  width: 60%;
+  margin: 16px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reimagine video {
+  width: 100%;
+  height: auto;
+  padding-bottom: 24px;
+}
+
+.thesislist {
+  width: 40%;
+  margin: 16px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fisma {
+  display: flex;
+  align-items: center;
+  background-color: hsla(222, 6%, 69%, 0.91);
+}
+
+.fisma span {
+  width: 65%;
+}
+
+.fisma img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.now {
+  display: flex;
+  align-items: center;
+}
+
+.now span {
+  width: 65%;
+}
+
+.now img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.thesisalt {
+  display: none;
+}
+
+.thesisalt h1 {
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 751px) and (max-width: 1000px) {
+  .reimagine {
+    width: 50%;
+  }
+  .thesislist {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .thesis {
+    display: none;
+  }
+  .thesisalt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: hsla(225, 6%, 25%, 0.05);
+    border-top: solid 1px hsla(222, 6%, 69%, 0.91);
+  }
+  .thesisalt video {
+    width: 100%;
+    height: auto;
+    padding-bottom: 24px;
+  }
+}
