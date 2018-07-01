@@ -29,7 +29,6 @@ p {
   align-items: center;
   width: 100%;
   height: 64px;
-
 }
 
 .logo {
@@ -64,6 +63,12 @@ nav {
 nav span {
   display: inline-block;
   padding-left: 16px;
+  transition: text-decoration .5s;
+}
+
+nav span:hover,
+nav span:active {
+  text-decoration: underline;
 }
 
 .altnav {
@@ -116,10 +121,17 @@ nav span {
 
 .start {
   background-color: #3c3e44;
+  border: #3c3e44 solid 2px;
   color: white;
   padding: 8px 0px;
   text-align: center;
   margin: 24px 0px;
+  transition: background-color 50ms 250ms;
+}
+
+.start:hover,
+.start:active {
+  background-color: hsla(225, 6%, 25%, 0.50);
 }
 
 @media only screen and (min-width: 751px) and (max-width: 1000px) {
@@ -139,7 +151,13 @@ nav span {
   }
   .start {
     background-color: hsla(225, 6%, 25%, 0.50);
+    border: hsla(225, 6%, 25%, 0.50) solid 2px;
     margin: 24px 0px 32px 0px;
+    transition: background-color 50ms 250ms;
+  }
+  .start:hover,
+  .start:active {
+    background-color: hsla(225, 6%, 25%, 0.30);
   }
   h1 {
     margin: 32px 0px;
@@ -157,7 +175,13 @@ nav span {
   }
   .start {
     background-color: hsla(225, 6%, 25%, 0.50);
+    border: hsla(225, 6%, 25%, 0.50) solid 2px;
     margin: 24px 0px 32px 0px;
+    transition: background-color 50ms 250ms;
+  }
+  .start:hover,
+  .start:active {
+    background-color: hsla(225, 6%, 25%, 0.30);
   }
   h1 {
     margin: 32px 0px;
@@ -180,6 +204,12 @@ a {
   color: #198dcb;
   font-size: 1.2rem;
   text-decoration: none;
+  transition: text-decoration 50ms 200ms;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
 }
 
 .practice {
@@ -429,13 +459,19 @@ a {
   }
   .coursesalt h2 {
     background-color: hsla(222, 6%, 69%, 0.60);
-    padding: 16px 16px 24px 16px;
+    padding: 24px 16px 24px 24px;
     margin: 8px;
     width: 300px;
+    transition: background-color 50ms 200ms;
+    border: hsla(222, 6%, 69%, 0.50) solid 2px;
+  }
+  .coursesalt h2:active,
+  .coursesalt h2:hover {
+    background-color: hsla(222, 6%, 69%, 0.20);
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 375px) {
   .coursessec {
     display: none;
   }
@@ -458,9 +494,15 @@ a {
   }
   .coursesalt h2 {
     background-color: hsla(222, 6%, 69%, 0.60);
-    padding: 16px 16px 24px 16px;
+    padding: 16px 16px 16px 16px;
     margin: 8px;
     width: 80%;
+    transition: background-color 50ms 200ms;
+    border: hsla(222, 6%, 69%, 0.50) solid 2px;
+  }
+  .coursesalt h2:active,
+  .coursesalt h2:hover {
+    background-color: hsla(222, 6%, 69%, 0.20);
   }
 }
 
@@ -591,6 +633,12 @@ a {
 
 .terms span {
   padding-left: 24px;
+  transition: text-decoration 50ms 200ms;
+}
+
+.terms span:active,
+.terms span:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 750px) {
@@ -598,12 +646,21 @@ a {
     background-color: hsla(225, 6%, 25%, 0.05);
     height: auto;
   }
+  .copyright {
+    font-size: 0.85rem;
+  }
+  .terms {
+    font-size: 0.85rem;
+  }
 }
 
-@media only screen and (max-width: 565px) {
+@media only screen and (max-width: 550px) {
   .footer {
     background-color: hsla(225, 6%, 25%, 0.05);
     height: auto;
+  }
+  .copyright {
+    font-size: 0.8rem;
   }
   .terms {
     display: none;
